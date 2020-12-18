@@ -1,0 +1,28 @@
+<!--
+  ~ Copyright (c) 2020. TechTime Initiative Group Limited. All rights reserved.
+  ~ *
+  ~ * The contents of this file have been approved for use by the author as a representative sample of the results
+  ~ * of their work performed while employed by TechTime Initiative Group Limited.
+  ~ *
+  ~ * For all questions, please contact support@techtime.co.nz
+  -->
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name ="Suite Runner File" verbose ="2" >
+
+    <listeners>
+        <listener class-name ="it.org.techtime.confluence.plugins.spaceunzip.selenium.parent.suit.utils.ResultListener"/>
+    </listeners>
+
+    <suite-files>
+        <!--        This is the parent suite configuration. Please DO NOT ADD any suite files here as it will break the Result Listener functionality     -->
+        <suite-file path ="smoke-test-suite.xml"/>
+    </suite-files>
+
+    <suite-files>
+        <!--        ADD more Suite files here    -->
+        <suite-file path ="integration-test-suite.xml"/>
+    </suite-files>
+
+</suite>
